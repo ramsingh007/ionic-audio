@@ -1,0 +1,22 @@
+<div class="card">
+	<div class="item item-text-wrap">
+		<h2>{{option.title}}</h2>
+		<div style="width:100%; background:#ccc;">
+			<div style="width:{{position}}%; background:green;">&nbsp;</div>
+		</div>
+	</div>
+	<div class="item tabs tabs-color-dark tabs-icon-left">
+		<a class="tab-item" href="javascript:" ng-click="playAudio()" ng-show="!isPlaying && !loaded">
+            <i class="icon ion-ios-play"></i> Play
+        </a>
+		<a class="tab-item" href="javascript:" ng-click="resumeAudio()" ng-show="!isPlaying && loaded">
+		    <i class="icon ion-ios-play"></i> Play
+		</a>
+		<a class="tab-item" href="javascript:" ng-click="pauseAudio()" ng-show="isPlaying && loaded">
+		    <i class="icon ion-pause"></i> Pause
+		</a>
+		<a class="tab-item" href="javascript:" ng-click="stopAudio()" >
+		    <i class="icon ion-stop"></i> Stop
+		</a>
+	</div>
+</div>

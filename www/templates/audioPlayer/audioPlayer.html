@@ -1,0 +1,9 @@
+<ion-view view-title="Audio Player">
+    <ion-content>
+        <div ng-if="tracks" class="list list-inset">
+			<div ng-repeat="track in tracks">
+				<audio-playback option="track" index="$index"></audio-playback>
+			</div>
+		</div>
+    </ion-content>
+</ion-view>
